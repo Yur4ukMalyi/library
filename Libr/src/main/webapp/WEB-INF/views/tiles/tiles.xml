@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+      
+      <!-- Books Page -->
+   <definition name="books" extends="base-definition">  
+       <put-attribute name="title" value="Books" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/books.jsp" />  
+   </definition> 
+   
+      <!-- Users Page -->
+   <definition name="users" extends="base-definition">  
+       <put-attribute name="title" value="Users" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/users.jsp" />  
+   </definition>
+
+
+    <!-- Debtors page -->
+   <definition name="debtors" extends="base-definition">  
+       <put-attribute name="title" value="Debtors" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/userDebtors.jsp" />  
+   </definition>
+   
+      <!-- Authors Page -->
+    <definition name="authors" extends="base-definition">
+        <put-attribute name="title" value="Authors" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/authors.jsp" />
+    </definition>
+   
+   <!-- BooksInstances Page -->
+   <definition name="bookInstances" extends="base-definition">  
+       <put-attribute name="title" value="Book Instances" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookInstances.jsp" />  
+   </definition> 
+   
+     <!-- BooksByNameInfo form Page -->
+   <definition name="bookForm" extends="base-definition">  
+       <put-attribute name="title" value="By name form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookForm.jsp" />  
+   </definition> 
+   
+   <!-- BooksByNameInfo result Page -->
+   <definition name="bookResult" extends="base-definition">  
+       <put-attribute name="title" value="By name result" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookResult.jsp" />  
+   </definition> 
+   
+     <!-- UserInfo Page -->
+   <definition name="userInfo" extends="base-definition">  
+       <put-attribute name="title" value="UserInfo" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/userInfo.jsp" />  
+   </definition> 
+   
+       <!-- BookInfo Page -->
+   <definition name="bookInfo" extends="base-definition">  
+       <put-attribute name="title" value="BookInfo" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookInfo.jsp" />  
+   </definition> 
+   
+    <!-- BookInstanceInfo Page -->
+   <definition name="bookInstInfo" extends="base-definition">  
+       <put-attribute name="title" value="BookInstanceInfo" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookInstanceInfo.jsp" />  
+   </definition> 
+   
+       <!-- BookIndap Page -->
+   <definition name="bookIndap" extends="base-definition">  
+       <put-attribute name="title" value="Books published after Independence" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/booksIndap.jsp" />  
+   </definition>
+
+       <!-- BooksByAuthor Page -->
+    <definition name="booksByAuthor" extends="base-definition">
+        <put-attribute name="title" value="List of books by certain author" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/booksByAuthor.jsp" />
+    </definition>
+
+    <!-- BooksByCoauthor Page -->
+    <definition name="booksByCoauthor" extends="base-definition">
+        <put-attribute name="title" value="List of books by certain author" />
+        <put-attribute name="body" value="/WEB-INF/views/pages/booksByCoauthor.jsp" />
+    </definition>
+
+   
+   <!-- most popular/unpopular by period form Page-->
+      <definition name="popularityForm" extends="base-definition">  
+       <put-attribute name="title" value="Book popularityForm" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookPopularityForm.jsp" />  
+   </definition> 
+   
+    <!-- most popular/unpopular by period result Page-->
+      <definition name="popularityResult" extends="base-definition">  
+       <put-attribute name="title" value="Book popularityResult" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bookPopularityResult.jsp" />  
+   </definition> 
+   
+    <!--user statistic form Page-->
+      <definition name="statisticForm" extends="base-definition">  
+       <put-attribute name="title" value="User statisticForm" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/userStatisticForm.jsp" />  
+   </definition> 
+  
+  <!--user statistic form Page-->
+      <definition name="userStatisticResult" extends="base-definition">  
+       <put-attribute name="title" value="User statistic Result" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/userStatisticResult.jsp" />  
+   </definition> 
+   
+   
+    <!--user age byAuthorForm form Page-->
+      <definition name="byAuthorForm" extends="base-definition">  
+       <put-attribute name="title" value="User avg age by Author form" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/byAuthorForm.jsp" />  
+   </definition> 
+   
+   
+   <!--user age byAuthorForm form Page-->
+      <definition name="userAgeByAuthorResult" extends="base-definition">  
+       <put-attribute name="title" value="User avg age by Author Result" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/byAuthorResult.jsp" />  
+   </definition> 
+   
+   <!-- Contact-us Page -->
+   <definition name="contactus" extends="base-definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/contactus.jsp" />  
+   </definition>  
+ 
+</tiles-definitions>
